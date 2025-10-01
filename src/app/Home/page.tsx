@@ -11,7 +11,8 @@ import {
   Target,
   Play,
   BookOpen,
-  Award
+  Award,
+  User
 } from "lucide-react";
 import heroImage from "../../../public/assets/images/hero-learning.jpg";
 import vocabularyImage from "../../../public/assets/images/vocabulary-concept.jpg";
@@ -58,6 +59,14 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+            <div className="absolute top-4 right-4 z-10">
+        <Button asChild variant="outline" size="sm" className="bg-background/80 backdrop-blur-sm">
+          <Link href="/Profile">
+            <User className="mr-2 h-4 w-4" />
+            Profile
+          </Link>
+        </Button>
+      </div>
       {/* Hero Section */}
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 bg-green-400 opacity-90"  style={{ background: "linear-gradient(135deg, hsl(142 76% 36%), hsl(217 91% 60%))" }}/>
